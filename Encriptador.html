@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador/Desencriptador</h1>
+
+        <label for="textoInput">Texto:</label>
+        <input type="text" id="textoInput" placeholder="Ingresa tu texto">
+
+        <label for="accionSelect">Acción:</label>
+        <select id="accionSelect">
+            <option value="encriptar">Encriptar</option>
+            <option value="desencriptar">Desencriptar</option>
+        </select>
+
+        <button onclick="realizarAccion()">Realizar Acción</button>
+
+        <label for="resultadoTextarea">Resultado:</label>
+        <textarea id="resultadoTextarea" rows="4" readonly></textarea>
+
+        <label for="registroTextarea">Registro:</label>
+        <textarea id="registroTextarea" rows="4" readonly></textarea>
+
+        <button onclick="copiarResultado()">Copiar Resultado</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
